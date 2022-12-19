@@ -1,0 +1,8 @@
+h1 {
+  text-align: center;
+  transform: translate(0px, 30vh);
+  color: white;
+}
+body {
+  background-color: rgb(133, 141, 237);
+}
