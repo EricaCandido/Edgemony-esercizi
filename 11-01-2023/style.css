@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  padding: 20px 0px 20px 0;
+  width: 25vw;
+  text-align: center;
+  border: 3px solid rgb(174, 167, 167);
+  font-size: smaller;
+}
+
+.quote-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: baseline; */
+  gap: 20px;
+}
+
+.quote {
+  max-width: 20%;
+  border: 3px solid rgb(202, 106, 155);
+  display: wrap;
+  justify-content: center;
+  padding: 20px 10px 0px 10px;
+}
+
+.quote-author {
+  text-align: end;
+}
