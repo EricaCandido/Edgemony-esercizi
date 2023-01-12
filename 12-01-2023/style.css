@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(245, 226, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(191, 107, 212);
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  width: 250px;
+  height: 200px;
+  padding: 0px 20px;
+}
+.text-input {
+  background: rgb(244, 211, 255);
+  height: 50px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+.check-btn {
+  border: 2px solid rgb(191, 107, 212);
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.completed,
+.uncompleted {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  transition: 0.35s;
+}
+
+.completed:hover,
+.uncompleted:hover {
+  background: rgb(191, 107, 212);
+}
+
+.completed {
+  background-color: rgb(191, 107, 212);
+}
+
+.uncompleted {
+  border: 1px solid rgb(191, 107, 212);
+}
