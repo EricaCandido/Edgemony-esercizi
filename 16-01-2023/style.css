@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  padding: 20px;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.open_btn {
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.open_btn:hover {
+  background-color: #e0ccb5;
+}
+
+.loader {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 450px;
+  border: 3px solid #c1925b;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.title {
+  font-size: 1.1rem;
+}
+
+.description {
+  flex-grow: 1;
+}
+
+.buy_btn {
+  border: none;
+  background: #c1925b;
+  padding: 6px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.buy_btn:hover {
+  cursor: pointer;
+  background-color: #7e5f3b;
+}
