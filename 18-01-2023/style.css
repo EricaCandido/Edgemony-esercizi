@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  padding: 20px;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.open_btn {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: white;
+}
+.open_btn:hover {
+  background-color: #e0ccb5;
+}
+
+.sell {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px;
+  height: 20px;
+  width: 50spx;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.sell:hover {
+  background-color: #e0ccb5;
+}
+
+.loader {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+header .hamburger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+header .tendina {
+  background-image: linear-gradient(to left, #ffecd2 0%, #fcb69f 100%);
+  box-shadow: 0px 10px 10px #000;
+  position: absolute;
+  width: 300px;
+  height: fit-content;
+  right: 19px;
+  top: 77px;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.35s;
+  padding: 20px;
+  font-weight: bold;
+}
+
+header .hamburger .line {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+}
+.show {
+  opacity: 1 !important;
+}
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 450px;
+  border: 3px solid #c1925b;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.title {
+  font-size: 1.1rem;
+}
+
+.description {
+  flex-grow: 1;
+}
+
+.buy_btn {
+  border: none;
+  background: #c1925b;
+  padding: 6px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.buy_btn:hover {
+  cursor: pointer;
+  background-color: #7e5f3b;
+}
+
+.cartRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #7e5f3b;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.remove_btn {
+  padding: 5px 7px;
+  background-color: #7e5f3b;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.remove_btn:hover {
+  cursor: pointer;
+  background-color: #c1925b;
+}
+
+.item_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item_form input,
+.item_form textarea {
+  background-color: transparent;
+  border: 1px solid#7e5f3b;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.item_form .submit {
+  color: white;
+  background: #7e5f3b;
+}
+.item_form .submit:hover {
+  background: #c1925b;
+  cursor: pointer;
+}
