@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./posts.js" type="module"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="forms">
+      <form class="item_form">
+        <h1>Sell your item form</h1>
+        <h3>Please, fill in the form.</h3>
+        <label for="item_title">Title</label>
+        <input
+          name="item_title"
+          class="titleInput"
+          type="text"
+          placeholder="Title of yout item"
+          required
+        />
+        <label for="item_price">Price</label>
+        <input
+          name="item_price"
+          class="priceInput"
+          type="number"
+          placeholder="Price of your item"
+          required
+        />
+        <label for="item_category">Category</label>
+        <input
+          name="item_category"
+          class="categoryInput"
+          type="number"
+          placeholder="Number category of your item"
+          required
+        />
+        <label for="item_image">Image</label>
+        <input
+          name="item_image"
+          class="item_imgInput"
+          type="text"
+          placeholder="Item image url"
+          required
+        />
+        <label for="item_description">Description</label>
+        <textarea
+          name="item_description"
+          class="descriptionInput"
+          placeholder="Description"
+        >
+        </textarea>
+        <input class="submit" type="submit" value="SEND" />
+      </form>
+      <form class="category_form">
+        <h1>Add a category form</h1>
+        <h3>Please, fill in the form to add a new category.</h3>
+        <label for="category_name">Name</label>
+        <input
+          name="category_name"
+          class="category_name"
+          type="text"
+          placeholder="Name your category"
+          required
+        />
+        <label for="category_name">Image</label>
+        <input
+          name="category_image"
+          class="category_image"
+          type="text"
+          placeholder="Category image url"
+          required
+        />
+        <input class="category_submit" type="submit" value="SEND" />
+      </form>
+    </div>
+  </body>
+</html>
