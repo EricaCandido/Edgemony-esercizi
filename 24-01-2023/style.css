@@ -1,0 +1,39 @@
+body {
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.container {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 250px;
+  border-radius: 26px;
+  background-color: #fbbe61;
+  background-image: linear-gradient(0deg, #fbbe61 0%, #ff5a82 100%);
+}
+
+.user_image {
+  max-width: 250px;
+}
+.search {
+  height: 20px;
+}
+
+.like {
+  font-size: 3rem;
+  color: rgb(241, 224, 224);
+  cursor: pointer;
+}
+
+.like:hover {
+  color: rgb(0, 0, 0);
+}
