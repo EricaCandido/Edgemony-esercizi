@@ -1,0 +1,134 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Erica",
+      "surname": "Candido",
+      "city": "Modica",
+      "gender": "F",
+      "age": 25,
+      "image": "https://picsum.photos/200/300",
+      "hobby": "sport"
+    },
+    {
+      "id": 2,
+      "name": "Mary",
+      "surname": "Gerratana",
+      "city": "Modica",
+      "gender": "F",
+      "age": 20,
+      "image": "https://picsum.photos/200/300?1",
+      "hobby": "social media"
+    },
+    {
+      "id": 3,
+      "name": "Piero",
+      "surname": "Cannata",
+      "city": "Roma",
+      "gender": "M",
+      "age": 50,
+      "image": "https://picsum.photos/200/300?2",
+      "hobby": "sport"
+    },
+    {
+      "id": 4,
+      "name": "Lucia",
+      "surname": "Tela",
+      "city": "Milano",
+      "gender": "F",
+      "age": 47,
+      "image": "https://picsum.photos/200/300?3",
+      "hobby": "social media"
+    },
+    {
+      "id": 5,
+      "name": "Valerio",
+      "surname": "Rossi",
+      "city": "Torino",
+      "gender": "M",
+      "age": 28,
+      "image": "https://picsum.photos/200/300?4",
+      "hobby": "social media"
+    },
+    {
+      "id": 6,
+      "name": "Pippo",
+      "surname": "Pluto",
+      "city": "Roma",
+      "gender": "M",
+      "age": 30,
+      "image": "https://picsum.photos/200/300?5",
+      "hobby": "social media"
+    },
+    {
+      "id": 7,
+      "name": "Miguel",
+      "surname": "de Unamuno",
+      "city": "Bilbao",
+      "gender": "M",
+      "age": 72,
+      "image": "https://picsum.photos/200/300?6",
+      "hobby": "literature"
+    },
+    {
+      "id": 8,
+      "name": "Topolino",
+      "surname": "Gerratana",
+      "city": "New York",
+      "gender": "M",
+      "age": 90,
+      "image": "https://picsum.photos/200/300?7",
+      "hobby": "social media"
+    },
+    {
+      "id": 9,
+      "name": "Giacomo",
+      "surname": "Leopardi",
+      "city": "Recanati",
+      "gender": "M",
+      "age": 39,
+      "image": "https://picsum.photos/200/300?8",
+      "hobby": "literature"
+    },
+    {
+      "id": 10,
+      "name": "Emily",
+      "surname": "Bronte",
+      "city": "Thornton",
+      "gender": "F",
+      "age": 30,
+      "image": "https://picsum.photos/200/300?9",
+      "hobby": "literature"
+    },
+    {
+      "id": 11,
+      "name": "Jane",
+      "surname": "Austen",
+      "city": "Winchester",
+      "gender": "F",
+      "age": 42,
+      "image": "https://picsum.photos/200/300?10",
+      "hobby": "literature"
+    },
+    {
+      "id": 12,
+      "name": "Willy",
+      "surname": "Shakespeare",
+      "city": "Stratford-upon-Avon",
+      "gender": "M",
+      "age": 52,
+      "image": "https://picsum.photos/200/300?11",
+      "hobby": "literature"
+    },
+    {
+      "id": 13,
+      "name": "Miguel",
+      "surname": "de Cervantes",
+      "city": "Alcalá de Henares",
+      "gender": "M",
+      "age": 59,
+      "image": "https://picsum.photos/200/300?12",
+      "hobby": "literature"
+    }
+  ]
+}
