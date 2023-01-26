@@ -1,0 +1,32 @@
+body {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+.countfrom_input {
+  border: none;
+}
+.timer {
+  font-weight: bold;
+  font-size: 4rem;
+  color: rgb(46, 34, 46);
+}
+.stop_btn,
+.countfrom_input {
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  width: 150px;
+  background-color: rgb(217, 193, 241);
+  cursor: pointer;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.35);
+}
+.stop_btn:hover {
+  background: rgb(197, 146, 197);
+}
