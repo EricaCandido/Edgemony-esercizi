@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    105deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(62, 56, 56, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(200, 0, 0);
+  background: linear-gradient(
+    103deg,
+    rgb(166, 1, 1) 0%,
+    rgba(91, 28, 28, 1) 62%,
+    rgba(37, 10, 9, 1) 100%
+  );
+}
+nav img {
+  width: 25px;
+}
+input {
+  border: none;
+  border-radius: 6px;
+  font-family: "Playfair Display", serif;
+  padding: 8px;
+  color: white;
+  background: rgba(91, 28, 28, 1) 62%;
+}
+.movies {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  cursor: pointer;
+}
+
+h2 {
+  color: white;
+}
+.popular,
+.top_rated {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.movie_img {
+  width: 200px;
+  height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 1);
+}
+
+.movie_img:hover {
+  transform: scale(0.9);
+}
