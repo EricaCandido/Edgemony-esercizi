@@ -1,0 +1,19 @@
+{
+  "name": "demo_npm",
+  "version": "1.0.0",
+  "description": "Prova prova prova",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon blog.js"
+  },
+  "keywords": [
+    "Prova",
+    "test"
+  ],
+  "author": "Erica Candido",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
