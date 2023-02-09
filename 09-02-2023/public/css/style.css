@@ -1,0 +1,46 @@
+
+body {
+    background: rgb(246, 184, 246);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    gap:20px;
+    font-size: 1.2rem;
+
+}
+.main{
+
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-1{
+    width: 300px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+}
+
+form input, button {
+    border: none;
+    border-radius: 6px;
+    padding:8px;
+}
+
+form button:hover{
+    cursor: pointer;
+    background: rgb(196, 146, 196);
+}
+
