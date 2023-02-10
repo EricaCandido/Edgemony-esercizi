@@ -2,7 +2,7 @@
   "devDependencies": {
     "nodemon": "^2.0.20"
   },
-  "name": "js",
+  "name": "template",
   "version": "1.0.0",
   "main": "app.js",
   "dependencies": {

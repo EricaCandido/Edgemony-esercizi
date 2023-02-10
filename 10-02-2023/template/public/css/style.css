@@ -232,11 +232,12 @@ a.navbar-brand {
 }
 
 .warning{
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 
 /**********************************
 *MEDIA QUERIES
