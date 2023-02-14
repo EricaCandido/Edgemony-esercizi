@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "63eb92d51de97cc239840669"
+  },
+  "id": 1,
+  "title": "You",
+  "description": "Un geniale libraio incontra un aspirante scrittrice, che presto diviene la sua ossessione. Usando i social media e Internet, l uomo cerca di avvicinarsi a lei, arrivando a rimuovere qualsiasi ostacolo si frapponga tra lui e lei.",
+  "category": [
+    "Thriller psicologico",
+    "Crime TV genre"
+  ],
+  "year": 2020
+},{
+  "_id": {
+    "$oid": "63eb92d51de97cc23984066a"
+  },
+  "id": 2,
+  "title": "Machos alpha",
+  "description": "Nel bel mezzo di una crisi di mezza età, quattro amici sentono che stanno perdendo i loro privilegi. Qualche anno fa sarebbero stati maschi alfa, ma sono stati spinti nell era dell uguaglianza. Ognuno cerca di adattarsi a modo suo.",
+  "category": [
+    "commedy"
+  ],
+  "year": 2022
+},{
+  "_id": {
+    "$oid": "63eb994aac65584ff72af362"
+  },
+  "id": 3,
+  "title": "The bold type",
+  "description": "Le peripezie di tre giovani amiche di New York che lavorano per Scarlet, una rivista femminile mentre si mettono alla prova in un mondo tanto affascinante quanto incerto e si trovano alle prese con i piccoli grandi problemi della vita.",
+  "category": [
+    "commedy"
+  ],
+  "year": 2017
+}]
