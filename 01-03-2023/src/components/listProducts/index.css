@@ -1,0 +1,7 @@
+.list-products {
+  padding-top: 50px;
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,17 @@
+.Control {
+  padding-top: 50px;
+  text-align: center;
+}
+.Control button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  color: white;
+  border-radius: 3px;
+}
+
+.Control button:hover {
+  background: white;
+  color: black;
+}

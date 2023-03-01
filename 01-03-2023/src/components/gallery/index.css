@@ -1,0 +1,14 @@
+.Gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.Gallery h2 {
+  padding-top: 40px;
+}
+.gallery-img-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
