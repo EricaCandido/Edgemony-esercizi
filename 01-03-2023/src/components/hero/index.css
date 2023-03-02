@@ -10,8 +10,8 @@
 
 .Hero h2 {
   position: absolute;
-  top: calc(50% - 52px);
-  left: 20%;
+  bottom: calc(20%);
+  right: 10%;
   height: 40px;
   color: white;
   font-size: 3rem;

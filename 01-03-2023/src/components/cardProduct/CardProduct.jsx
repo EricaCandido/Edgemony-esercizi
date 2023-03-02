@@ -1,26 +1,16 @@
-// import "./index.css";
-
-// const CardProduct = ({ productData }) => {
-//   <div className="card-product">
-//     <img src={productData.thumbnail} alt={productData.title} />
-//     <h3>{productData.title}</h3>
-//     <p>{productData.description}</p>
-//     <h4>{productData.price}</h4>
-//     <p>{productData.brand}</p>
-//     <p>Scontato del {productData.discountPercentage}%</p>
-//   </div>;
-// };
-
-// export default CardProduct;
-
 import Button from "../button";
 import "./index.css";
+import { useState } from "react";
 
 const CardProduct = ({ productData }) => {
+  const [modalEvent, setModalEvent] = useState(false);
+
   const onGetStock = () =>
     alert(`Ci sono ${productData.stock} prodotti disponibili`);
 
-  const onImageClick = () => window.open(productData.images[0], "_self");
+  const onImageClick = () => {
+    setModalEvent(prev);
+  };
 
   return (
     <div className="CardProduct">
