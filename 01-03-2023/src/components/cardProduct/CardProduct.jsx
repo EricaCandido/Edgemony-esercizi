@@ -1,15 +1,12 @@
 import Button from "../button";
 import "./index.css";
-import { useState } from "react";
 
-const CardProduct = ({ productData }) => {
-  const [modalEvent, setModalEvent] = useState(false);
-
+const CardProduct = ({ productData, setSingleProductModal }) => {
   const onGetStock = () =>
     alert(`Ci sono ${productData.stock} prodotti disponibili`);
 
   const onImageClick = () => {
-    setModalEvent(prev);
+    setSingleProductModal(() => productData);
   };
 
   return (

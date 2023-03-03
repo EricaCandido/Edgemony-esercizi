@@ -16,6 +16,7 @@
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
   filter: saturate(1.2) contrast(1.1);
+  cursor: pointer;
 }
 
 .CardProduct hr {

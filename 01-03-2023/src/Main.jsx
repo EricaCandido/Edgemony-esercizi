@@ -4,18 +4,18 @@ import Header from "./components/header/Header";
 import Hero from "./components/hero";
 import Footer from "./components/footer/Footer";
 import ListProducts from "./components/listProducts/ListProducts";
-import { productsList } from "./mocks/productsList";
-import Control from "./components/control";
 import Gallery from "./components/gallery/Gallery";
-import Counter from "./components/counter";
+// import Counter from "./components/counter";
 import Modal from "./components/modal";
-import ImageProduct from "./components/imagePproduct";
+import ImageProduct from "./components/imageProduct";
+import Slider from "./components/slider/Slider";
 
 const Main = () => {
+  const [isDarkMode, setDarkMode] = useState(false);
   const [isModalOpen, setModalOpen] = useState(true);
-  const [singleProductModal, setSingleProductModal] = useState(false);
+  const [singleProductModal, setSingleProductModal] = useState(null);
   return (
-    <div className="Main">
+    <div className={`Main ${isDarkMode && "dark-mode"} `}>
       <Header
         title="E-commerce"
         section1="Pro"
@@ -24,12 +24,24 @@ const Main = () => {
         section4="Documentation"
       />
       <Hero title="Store" />
-      <Counter />
+      {/* <Counter /> */}
       <Gallery title="Galleria" />
-      <Control listDataLength={productsList.length} />
-      <ListProducts listData={productsList} />
+      <Slider />
+      <ListProducts setSingleProductModal={setSingleProductModal} />
+      <button
+        className="toggle-mode"
+        onClick={() => setDarkMode((prev) => !prev)}
+      >
+        {isDarkMode ? "☀️" : "🌙"}
+      </button>
       {isModalOpen ? <Modal setModalOpen={setModalOpen} /> : null}
-      {condition ? <ImageProduct /> : null}
+      {singleProductModal ? (
+        <ImageProduct
+          product={singleProductModal}
+          setSingleProductModal={setSingleProductModal}
+        />
+      ) : null}
+
       <Footer />
     </div>
   );
