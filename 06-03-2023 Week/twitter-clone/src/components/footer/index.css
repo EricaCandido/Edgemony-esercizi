@@ -1,0 +1,17 @@
+.Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 60px;
+  background-color: white;
+  border-top: 1px solid rgba(128, 128, 128, 0.548);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Footer img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}

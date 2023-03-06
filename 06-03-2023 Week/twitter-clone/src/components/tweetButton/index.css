@@ -1,0 +1,20 @@
+.TweetButton {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+}
+
+.TweetButton button {
+  background-color: #218bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.TweetButton img {
+  height: 25px;
+  width: 25px;
+}

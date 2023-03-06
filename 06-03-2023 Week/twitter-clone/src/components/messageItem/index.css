@@ -1,0 +1,37 @@
+.MessageItem {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 30px 0px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.548);
+}
+
+.profile-pic {
+  height: 50px;
+  border-radius: 100%;
+  background-color: #b6e3ff;
+}
+.text-container {
+  width: 100%;
+}
+.userName {
+  font-weight: bold;
+}
+.email {
+  font-size: 0.9rem;
+  color: rgb(128, 128, 128);
+}
+.tweet {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+.reactions {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.reactions img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
