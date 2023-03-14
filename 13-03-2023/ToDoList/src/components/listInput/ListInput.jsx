@@ -1,20 +1,31 @@
 import "./index.css";
 import { useState } from "react";
-const ListInput = () => {
+const ListInput = ({ setList }) => {
   const [noteText, setNoteText] = useState("");
 
-  const onHandleSubmit = () => {
+  const onHandleSubmit = (e) => {
+    e.preventDefault();
+    setList((prev) => [
+      ...prev,
+      {
+        id: prev.length + 1,
+        todo: noteText,
+        completed: false,
+        userId: Math.floor(Math.random() * 1000),
+      },
+    ]);
     console.log(noteText);
   };
 
   return (
-    <div className="ListInput">
-      <form onSubmit={onHandleSubmit}>
+    <div>
+      <form className="ListInput" onSubmit={onHandleSubmit}>
         <input
           onChange={(e) => setNoteText(e.target.value)}
           type="text"
           placeholder="Your note"
           value={noteText}
+          required
         />
         <input className="uploadBtn" type="submit" value="Upload" />
       </form>

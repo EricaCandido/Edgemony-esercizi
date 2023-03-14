@@ -1,0 +1,41 @@
+.ListItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 150px;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 4px rgb(222, 222, 222);
+  background-image: url(https://img.freepik.com/free-vector/blank-cream-notepaper-design_53876-97377.jpg?w=360&t=st=1678804538~exp=1678805138~hmac=73ae461cf533dd33a0abe4a8343801605de0f6bb7ec480aaed132b963f0d26e7);
+  position: relative;
+}
+
+.ListItem button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 100%;
+  padding: 0;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.ListItem button:hover {
+  background: black;
+  color: antiquewhite;
+}
+
+.Checkbox {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.fill {
+  fill: green;
+}

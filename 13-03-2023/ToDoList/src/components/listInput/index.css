@@ -1,0 +1,23 @@
+.ListInput {
+  /* border: 1px solid violet; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 150px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgb(222, 222, 222);
+  background-image: url(https://img.freepik.com/free-vector/blank-cream-notepaper-design_53876-97377.jpg?w=360&t=st=1678804538~exp=1678805138~hmac=73ae461cf533dd33a0abe4a8343801605de0f6bb7ec480aaed132b963f0d26e7);
+}
+
+.ListInput input {
+  outline: none;
+  border: 0.5px solid rgba(189, 189, 189, 0.571);
+  box-shadow: 0 0 4px rgba(255, 135, 44, 0.279);
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 6px;
+}
