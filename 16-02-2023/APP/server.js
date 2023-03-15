@@ -1,4 +1,5 @@
 require('./models/DBconfig');
+require('dotenv').config() //PER UTILIZZARE L'.ENV
 const express = require('express');
 const hbs = require('hbs');
 const bodyparser = require('body-parser');
@@ -15,16 +16,11 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.use(express.static('./public'))
 
 
-// app.use(bodyparser.urlencoded({
-//     extended: true
-// }));
-// app.use('/', routes);
-
-
 app.use(bodyparser.urlencoded({
     extended: true
 }));
-app.use('/', movie_routes);
+app.use('/', routes);
+app.use('/movie', movie_routes);
 
 
 app.listen(PORT, () => {

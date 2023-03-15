@@ -4,20 +4,21 @@
   padding: 0px;
   margin: 0px;
 }
-/* html {
+html {
   overflow-x: hidden;
-} */
+}
 body {
-  background: rgb(217, 239, 252);
+  /* background: rgb(217, 239, 252);
   background: linear-gradient(
     99deg,
     rgba(217, 239, 252, 1) 0%,
     rgba(255, 255, 255, 0.8127626050420168) 49%
-  );
+  ); */
   font-family: "Lato", sans-serif;
   width: 100vw;
 }
 nav {
+  padding: 10px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,8 +27,7 @@ nav {
 .nav_text {
   display: flex;
   padding: 10px 5px;
-  gap: 10px;
-  text-shadow: 2px 2px 4px rgb(124, 170, 249);
+  gap: 20px;
 }
 .nav_text a {
   text-decoration: none;
@@ -118,18 +118,23 @@ main {
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.35);
   bottom: 5%;
   right: 0.3%;
-  background: rgb(255, 225, 155);
+  background: rgb(155, 194, 255);
+  background: linear-gradient(
+    222deg,
+    rgba(155, 194, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8127626050420168) 80%
+  );
+  /* background: rgb(255, 225, 155);
   background: radial-gradient(
     circle,
     rgba(255, 225, 155, 1) 0%,
     rgba(190, 141, 57, 1) 64%
-  );
+  ); */
   z-index: 1;
   width: 15%;
   height: 15%;
 }
 .random-destination h3 {
-  text-shadow: 2px 2px 4px rgba(99, 69, 23, 0.993);
   font-size: 1.8rem;
   text-align: center;
 }
@@ -141,22 +146,22 @@ main {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
   cursor: pointer;
   font-family: "Lato", sans-serif;
-  background: rgb(255, 225, 155);
+  /* background: rgb(255, 225, 155);
   background: linear-gradient(
     86deg,
     rgba(255, 225, 155, 1) 0%,
     rgba(190, 141, 57, 1) 64%
+  ); */
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.7147233893557423) 46%,
+    rgba(155, 194, 255, 0.6923144257703081) 100%
   );
-
-  border: 1px solid rgba(152, 104, 32, 0.635);
-}
-.random-btn:hover {
-  background: rgba(172, 129, 37, 0.398);
 }
 main h1,
 .results,
 .your-destination {
-  text-shadow: 2px 2px 4px rgba(102, 137, 198, 0.744);
   padding: 30px 0px 0px 80px;
 }
 
@@ -181,7 +186,8 @@ main h1,
 
 .show.-all:hover,
 .show:hover,
-.view-more-btn:hover {
+.view-more-btn:hover,
+.random-btn:hover {
   background: rgb(200, 218, 244);
 }
 .loader {
@@ -230,9 +236,7 @@ main h1,
   flex-direction: column;
   gap: 8px;
 }
-.city-name {
-  text-shadow: 2px 2px 4px rgb(124, 170, 249);
-}
+
 .card-text-btn {
   padding: 10px;
   gap: 7px;

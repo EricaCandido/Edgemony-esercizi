@@ -1,0 +1,22 @@
+.MiniCardList {
+  display: flex;
+  gap: 10px;
+  margin: 0 60px;
+  padding: 10px;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+}
+
+/* .MiniCardList::-webkit-scrollbar {
+  width: 50px;
+}
+
+.MiniCardList::-webkit-scrollbar-track {
+  background: var(--scroll-bar-bg-color);
+}
+
+.MiniCardList::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-bg-color);
+  border-radius: 20px;
+  border: 3px solid var(--scroll-bar-bg-color);
+} */

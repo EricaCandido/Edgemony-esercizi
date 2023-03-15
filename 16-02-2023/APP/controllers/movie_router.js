@@ -1,16 +1,16 @@
 const express = require('express');
-let router = express.Router();
+let movieRouter = express.Router();
 const mongoose = require('mongoose');
 const Movie = mongoose.model('movieModel');
 
 
-router.get('/', (req, res) => {
+movieRouter.get('/', (req, res) => {
     res.render("update_movie", {
         viewTitle: "Inserisci un film"
     });
 });
 
-router.post('/', (req, res) => {
+movieRouter.post('/', (req, res) => {
     if (req.body._id == '')
         insertRecord(req, res);
     else
@@ -44,7 +44,7 @@ function updateRecord(req, res) {
     });
 }
 
-router.get('/movie_list', (req, res) => {
+movieRouter.get('/movie_list', (req, res) => {
     Movie.find((err, docs) => {
         if (!err) {
             res.render("movie_list", {
@@ -57,7 +57,7 @@ router.get('/movie_list', (req, res) => {
     });
 });
 
-router.get('/:movie_id', (req, res) => {
+movieRouter.get('/:movie_id', (req, res) => {
     Movie.findById(req.params._id, (err, doc) => {
         if (!err) {
             res.render("update_movie", {
@@ -68,7 +68,7 @@ router.get('/:movie_id', (req, res) => {
     });
 });
 
-router.get('/delete/:movie_id', (req, res) => {
+movieRouter.get('/delete/:movie_id', (req, res) => {
     Movie.findByIdAndRemove(req.params._id, (err, doc) => {
         if (!err) {
             res.redirect('/movie_list');
@@ -79,4 +79,4 @@ router.get('/delete/:movie_id', (req, res) => {
     });
 });
 
-module.exports = router;
+module.exports = movieRouter;

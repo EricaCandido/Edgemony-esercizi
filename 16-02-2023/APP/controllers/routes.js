@@ -3,18 +3,18 @@ let router = express.Router();
 const mongoose = require('mongoose');
 const Nota = mongoose.model('notaModel');
 
-// router.get('/', (req, res) => {
-//     res.render("addupdate", {
-//         viewTitle: "Inserisci una nota"
-//     });
-// });
+router.get('/', (req, res) => {
+    res.render("addupdate", {
+        viewTitle: "Inserisci una nota"
+    });
+});
 
-// router.post('/', (req, res) => {
-//     if (req.body._id == '')
-//         insertRecord(req, res);
-//     else
-//         updateRecord(req, res);
-// });
+router.post('/', (req, res) => {
+    if (req.body._id == '')
+        insertRecord(req, res);
+    else
+        updateRecord(req, res);
+});
 
 function insertRecord(req, res) {
     let nota = new Nota(); //aggiorna Nota, quindi dispone il nuovo modello
@@ -57,26 +57,26 @@ router.get('/list', (req, res) => {
 });
 
 
-// router.get('/:id', (req, res) => {
-//     Nota.findById(req.params.id, (err, doc) => {
-//         if (!err) {
-//             res.render("addupdate", {
-//                 viewTitle: "Aggiornamento",
-//                 nota: doc
-//             });
-//         }
-//     });
-// });
+router.get('/:id', (req, res) => {
+    Nota.findById(req.params.id, (err, doc) => {
+        if (!err) {
+            res.render("addupdate", {
+                viewTitle: "Aggiornamento",
+                nota: doc
+            });
+        }
+    });
+});
 
-// router.get('/delete/:id', (req, res) => {
-//     Nota.findByIdAndRemove(req.params.id, (err, doc) => {
-//         if (!err) {
-//             res.redirect('/list');
-//         }
-//         else {
-//             console.log(`Errore ${err}`);
-//         }
-//     });
-// });
+router.get('/delete/:id', (req, res) => {
+    Nota.findByIdAndRemove(req.params.id, (err, doc) => {
+        if (!err) {
+            res.redirect('/list');
+        }
+        else {
+            console.log(`Errore ${err}`);
+        }
+    });
+});
 
 module.exports = router;

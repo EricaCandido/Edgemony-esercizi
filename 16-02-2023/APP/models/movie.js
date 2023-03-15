@@ -5,12 +5,14 @@ const mongoose = require('mongoose');
 let movieSchema = new mongoose.Schema({
     title: {
         type: String,
+        required:true
     },
      year: {
         type: Number,
     },
     seen: {
-        type: String
+        type: String,
+        default:"Sì"
     },
     tvSerie: {
         type: String

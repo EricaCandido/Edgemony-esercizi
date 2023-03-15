@@ -1,5 +1,5 @@
 const MongoClient=require('mongodb').MongoClient
-let url="mongodb+srv://erica1997:Ericamongodb1997@mycluster.6yujntw.mongodb.net/school?retryWrites=true"
+let url="connection-string"
 
 // // connessione al database
 // MongoClient.connect(url)

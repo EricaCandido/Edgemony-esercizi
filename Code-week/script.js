@@ -1,42 +1,6 @@
 import { GET, cardGenerator, qS, cE, getRandomInt } from "./utils.js";
 
 //hero
-// const heroImages = [
-//   "./img/hero-ocean2.jpg",
-//   "./img/hero-adventure2.jpg",
-//   "./img/hero-relax.jpg",
-// ];
-// const heroText = [
-//   'It\'s a big word out there...  "Man cannot discover new oceans unless he has the courage to lose sight of the shore"',
-//   "It's time for adventures",
-//   "Just relax & enjoy",
-// ];
-
-// let heroImgCounter = 0;
-
-// const heroEl = qS("hero");
-// const wrapperEl = cE("div");
-// const heroImgEl = cE("img");
-// const textEl = cE("h3");
-
-// wrapperEl.className = "wrapper";
-
-// heroImgEl.setAttribute("src", heroImages[0]);
-
-// setInterval(() => {
-//   heroImgEl.src = heroImages[heroImgCounter];
-//   textEl.textContent = heroText[heroImgCounter];
-//   heroImgEl.className = `image${heroImgCounter}`;
-//   textEl.className = `text-img${heroImgCounter}`;
-//   heroImgCounter++;
-
-//   if (heroImgCounter >= heroImages.length) {
-//     heroImgCounter = 0;
-//   }
-// }, 3000);
-// wrapperEl.appendChild(textEl);
-// wrapperEl.appendChild(heroImgEl);
-// heroEl.appendChild(wrapperEl);
 
 const heroImages = [
   "./img/hero-ocean2.jpg",

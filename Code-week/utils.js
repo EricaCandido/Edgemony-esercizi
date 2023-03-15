@@ -64,13 +64,4 @@ const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-// const arr = id_destinations,
-//   destinations = id_destinations.length,
-//   total = destinations - 1,
-//   index = getRandomInt(0, total);
-
-// console.log(arr[index]);
-
-// cardGenerator()
-
 export { GET, cardGenerator, qS, cE, getRandomInt };
