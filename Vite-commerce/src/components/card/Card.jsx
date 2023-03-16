@@ -1,9 +1,16 @@
 import { shortDescription } from "../../utils/func";
 import "./index.css";
 
-const Card = ({ productData }) => {
+const Card = ({ productData, setModalContext }) => {
+  const onHandleAddCart = () => {};
+  const onHandleCardClick = () => {
+    setModalContext(() => ({
+      modalVisible: true,
+      productData,
+    }));
+  };
   return (
-    <div className="Card">
+    <div className="Card" onClick={onHandleCardClick}>
       <img
         className="Card__image"
         src={productData.thumbnail}
@@ -14,6 +21,8 @@ const Card = ({ productData }) => {
         <p className="Card__text--desc">
           {shortDescription(productData.description)}
         </p>
+        {/* onClick={onHandleAddCart} */}
+        <button className="Card___btn--add">+🛒</button>
         <p className="Card__text--cat">{productData.category}</p>
         <p className="Card__text--price">$ {productData.price}</p>
       </div>

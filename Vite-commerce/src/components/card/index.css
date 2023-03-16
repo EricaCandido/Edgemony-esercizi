@@ -43,7 +43,21 @@
   margin: 0;
   font-size: 0.9rem;
 }
-
+.Card___btn--add {
+  position: absolute;
+  bottom: 46px;
+  left: 10px;
+  border: 0;
+  padding: 4px;
+  background: rgba(255, 187, 0, 0.816);
+  border-radius: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Card___btn--add:hover {
+  scale: 1.4;
+  background-color: rgba(241, 177, 4, 0.842);
+}
 .Card__text--cat {
   position: absolute;
   bottom: 10px;

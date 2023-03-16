@@ -1,0 +1,11 @@
+.CartModal {
+  border: 1px solid red;
+  position: fixed;
+  right: -500px;
+  width: 50vw;
+  background-color: rgb(254, 254, 254);
+  z-index: 3;
+}
+.cart-visible {
+  right: 0;
+}

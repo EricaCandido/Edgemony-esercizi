@@ -3,17 +3,18 @@ import { useState, useEffect } from "react";
 import MiniCard from "../miniCard/MiniCard";
 import { GET } from "../../utils/http";
 
-const MiniCardList = ({ inputValue }) => {
-  const [miniList, setMiniList] = useState([]);
+const MiniCardList = ({ inputValue, productsList }) => {
+  // const [miniList, setMiniList] = useState([]);
 
-  useEffect(() => {
-    GET(`products`).then((data) => setMiniList(data.products));
-  }, []);
+  // useEffect(() => {
+  //   GET(`products`).then((data) => setMiniList(data.products));
+  // }, []);
 
   return (
     <div className="MiniCardList">
       {inputValue !== ""
-        ? miniList
+        ? // ? miniList
+          productsList
             .filter((minicard) => minicard.category == inputValue)
             .map((minicard) => (
               <MiniCard
@@ -22,7 +23,8 @@ const MiniCardList = ({ inputValue }) => {
                 key={minicard.id}
               />
             ))
-        : miniList.map((minicard) => (
+        : // : miniList.map((minicard) => (
+          productsList.map((minicard) => (
             <MiniCard
               imgSrc={minicard.thumbnail}
               imgAlt={minicard.title}

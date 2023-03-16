@@ -1,11 +1,17 @@
+import CartModal from "../cartModal";
 import "./index.css";
 
-const Navbar = ({ setInputValue }) => {
-  // const onHandleInput = (e) => setInputValue(() => e.target.value);
-
+const Navbar = ({ setInputValue, setModalContext }) => {
   const onHandleChange = (e) => {
-    // e.preventDefault();
     setInputValue(() => e.target.value);
+  };
+
+  const onHandleClickCart = () => {
+    setModalContext((prev) => ({
+      ...prev,
+
+      modalVisible: true,
+    }));
   };
 
   return (
@@ -15,7 +21,6 @@ const Navbar = ({ setInputValue }) => {
         <li>Contacts</li>
         <li>About us</li>
       </ul>
-      {/* <form onSubmit={onHandleSubmit}> */}
 
       <select
         className="nav__select"
@@ -31,14 +36,10 @@ const Navbar = ({ setInputValue }) => {
         <option value="groceries">Groceries</option>
         <option value="home-decoration">Home-decoration</option>
       </select>
-      {/* <input
-          value={inputValue}
-          onChange={onHandleInput}
-          type="text"
-          placeholder="Cerca prodotto ..."
-          required
-        /> */}
-      {/* </form> */}
+      <div onClick={onHandleClickCart} className="header_cart">
+        🛒
+      </div>
+      {/* <CartModal cartModalContext={cartModalContext} /> */}
     </div>
   );
 };
