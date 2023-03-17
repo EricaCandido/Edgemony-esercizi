@@ -1,17 +1,13 @@
 import CartModal from "../cartModal";
 import "./index.css";
 
-const Navbar = ({ setInputValue, setModalContext }) => {
+const Navbar = ({ setInputValue, setCartModalVisibility, cartListLength }) => {
   const onHandleChange = (e) => {
     setInputValue(() => e.target.value);
   };
 
   const onHandleClickCart = () => {
-    setModalContext((prev) => ({
-      ...prev,
-
-      modalVisible: true,
-    }));
+    setCartModalVisibility((prev) => !prev);
   };
 
   return (
@@ -38,8 +34,8 @@ const Navbar = ({ setInputValue, setModalContext }) => {
       </select>
       <div onClick={onHandleClickCart} className="header_cart">
         🛒
+        <p className="header_cart-length">{cartListLength}</p>
       </div>
-      {/* <CartModal cartModalContext={cartModalContext} /> */}
     </div>
   );
 };

@@ -6,7 +6,7 @@
   height: 320px;
   border-radius: 6px;
   box-shadow: 0 0 4px lightgray;
-  cursor: pointer;
+
   transition: transform 0.35s;
   scroll-snap-align: end;
 }
@@ -37,6 +37,10 @@
 .Card__text--title {
   margin: 0;
   font-size: 1rem;
+  cursor: pointer;
+}
+.Card__text--title:hover {
+  color: rgb(255, 145, 0);
 }
 
 .Card__text--desc {

@@ -2,7 +2,13 @@ import Card from "../card/Card";
 import SpinnerLoading from "../spinnerLoading/SpinnerLoading";
 import "./index.css";
 
-const CardList = ({ title, productsList, setModalContext }) => {
+const CardList = ({
+  title,
+  productsList,
+  setModalContext,
+  setCartList,
+  cartList,
+}) => {
   return (
     <div className="CardList">
       <h2 className="CardList__title">{title}</h2>
@@ -13,6 +19,8 @@ const CardList = ({ title, productsList, setModalContext }) => {
               productData={product}
               key={product.id}
               setModalContext={setModalContext}
+              setCartList={setCartList}
+              cartList={cartList}
             />
           ))
         ) : (
