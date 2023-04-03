@@ -1,7 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+.general_title {
+  /* border: 1px solid red; */
+  text-align: center;
+  padding: 0 10px;
+  /* font-family: "Delius Swash Caps", cursive; */
+  font-family: "Yellowtail", cursive;
+  border-bottom: 1px dotted rgba(42, 37, 46, 0.943);
+  font-size: 2rem;
+}
 .ListInput {
   /* border: 1px solid violet; */
+
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -10,7 +22,8 @@
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 4px rgb(222, 222, 222);
-  background-image: url(https://img.freepik.com/free-vector/blank-cream-notepaper-design_53876-97377.jpg?w=360&t=st=1678804538~exp=1678805138~hmac=73ae461cf533dd33a0abe4a8343801605de0f6bb7ec480aaed132b963f0d26e7);
+  background-color: #f9d29d;
+  background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
 }
 
 .ListInput input {
@@ -20,4 +33,12 @@
   background-color: antiquewhite;
   padding: 10px;
   border-radius: 6px;
+  cursor: pointer;
+  height: 100px;
+  font-family: "Yellowtail", cursive;
+  font-size: 1.3rem;
+}
+
+.ListInput input:hover {
+  background-color: rgb(252, 229, 199);
 }

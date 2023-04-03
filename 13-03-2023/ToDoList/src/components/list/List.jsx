@@ -1,6 +1,6 @@
 import "./index.css";
 import ListItem from "../listItem";
-const List = ({ list, setList }) => {
+const List = ({ list, setList, rose, orange, green, purple }) => {
   return (
     <div className="List">
       {list
@@ -11,6 +11,10 @@ const List = ({ list, setList }) => {
             list={list}
             setList={setList}
             key={item.id}
+            rose={rose}
+            orange={orange}
+            green={green}
+            purple={purple}
           />
         ))}
     </div>

@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
+
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  /* font-family: "Stalemate", cursive; */
+}
+
+.dark {
+  background-color: rgba(42, 37, 46, 0.943);
+  color: white;
 }

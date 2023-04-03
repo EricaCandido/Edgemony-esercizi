@@ -1,9 +1,10 @@
 import "./index.css";
 import { useState } from "react";
 
-import { BsCircle, BsFillCheckCircleFill } from "react-icons/bs";
+import { BsFillCircleFill } from "react-icons/bs";
+import { MdClose } from "react-icons/md";
 
-const ListItem = ({ list, setList, noteText }) => {
+const ListItem = ({ list, setList, noteText, rose, orange, green, purple }) => {
   const [visualize, setVisualize] = useState(false);
 
   const onHandleCheckbox = () => {
@@ -15,15 +16,28 @@ const ListItem = ({ list, setList, noteText }) => {
   };
 
   return (
-    <div className="ListItem">
-      <p> {noteText.todo}</p>
-      <button onClick={() => onHandleRemove(noteText.id)}> X</button>
+    <div
+      className={`ListItem ${rose && "_1"} ${orange && "_2"} ${green && "_3"} ${
+        purple && "_4"
+      }`}
+    >
+      <p>
+        {" "}
+        {`${
+          noteText.todo.length > 60 ? noteText.todo.slice(0, 60) : noteText.todo
+        }`}
+      </p>
+      <button onClick={() => onHandleRemove(noteText.id)}>
+        <MdClose />
+      </button>
 
-      <BsCircle
+      <BsFillCircleFill
         onClick={onHandleCheckbox}
         className={`Checkbox ${visualize && "fill"}`}
       />
-      {/* {  <BsFillCheckCircleFill />} */}
+      <p className="listItem__date">{`${new Date().getDate()}/${
+        new Date().getMonth() + 1
+      }/${new Date().getFullYear()}`}</p>
     </div>
   );
 };

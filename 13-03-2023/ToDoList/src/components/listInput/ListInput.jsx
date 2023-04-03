@@ -19,15 +19,16 @@ const ListInput = ({ setList }) => {
 
   return (
     <div>
+      <h2 className="general_title">Notes</h2>
       <form className="ListInput" onSubmit={onHandleSubmit}>
         <input
           onChange={(e) => setNoteText(e.target.value)}
           type="text"
-          placeholder="Your note"
+          placeholder="New note"
           value={noteText}
           required
         />
-        <input className="uploadBtn" type="submit" value="Upload" />
+        <input className="uploadBtn" type="submit" value="Post" />
       </form>
     </div>
   );

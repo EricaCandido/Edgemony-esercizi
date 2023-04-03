@@ -1,4 +1,3 @@
-import CartModal from "../cartModal";
 import "./index.css";
 
 const Navbar = ({ setInputValue, setCartModalVisibility, cartListLength }) => {

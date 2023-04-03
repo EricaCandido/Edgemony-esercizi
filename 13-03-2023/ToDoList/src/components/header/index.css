@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
+
+.Header {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffac81;
+  background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+  z-index: 1;
+}
+
+.Header span {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(86, 86, 86, 0.593);
+  border-radius: 100%;
+
+  cursor: pointer;
+}
+
+.Header span:hover {
+  background-color: rgba(86, 86, 86, 0.749);
+}
+.header__font,
+.header__add {
+  font-family: "Delius Swash Caps", cursive;
+}
+.header__font {
+  font-size: 0.8rem;
+}
+.header__add {
+  font-size: 1.2 rem;
+}
+.color-btns {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  right: 1%;
+  bottom: -400px;
+}
+
+.color-btn {
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.462);
+}
+._1 {
+  background-color: #ffac81;
+  background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+}
+
+._2 {
+  background-color: #f7b42c;
+  background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+}
+
+._3 {
+  background-color: #7ee8fa;
+  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  color: #242424;
+}
+
+._4 {
+  background-color: #f9c5d1;
+  background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+}

@@ -2,24 +2,10 @@ import { shortDescription } from "../../utils/func";
 import "./index.css";
 
 const Card = ({ productData, setModalContext, setCartList, cartList }) => {
-  // const onHandleAddCart = (selectedProd) => {
-  // if (cartList.filter((product) => product.id !== selectedProd.id)) {
-  //   setCartList((prev) => [...prev, productData]);
-  // } else {
-  //   setCartList((prev) => [...prev]);
-  //   alert("Product already added");
-  // }
-  //     const filtered = cartList.filter(
-  //       (product) => product.id !== selectedProd.id
-  //     );
-
-  //     setCartList(filtered);
-  //     console.log(filtered);
-  //   }
-  // };
-
   const onHandleAddCart = (selectedProd) => {
-    setCartList((prev) => [...prev, productData]);
+    !cartList.find((prod) => prod.id == selectedProd.id)
+      ? setCartList((prev) => [...prev, productData])
+      : setCartList((prev) => [...prev]);
   };
 
   const onHandleCardClick = () => {
