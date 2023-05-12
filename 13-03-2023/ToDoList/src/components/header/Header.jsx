@@ -1,4 +1,4 @@
-import "./index.css";
+import styles from "./index.module.scss";
 import { BsFillMoonStarsFill, BsArrowUp } from "react-icons/bs";
 
 const Header = ({
@@ -46,22 +46,34 @@ const Header = ({
   };
   return (
     <div
-      className={`Header ${rose && "_1"} ${orange && "_2"} ${green && "_3"} ${
-        purple && "_4"
-      }`}
+      className={`${styles.Header} ${rose && "_1"} ${orange && "_2"} ${
+        green && "_3"
+      } ${purple && "_4"}`}
     >
-      <span className="header__font">Fonts</span>
-      <span className="header__darkMode" onClick={onHandleDark}>
+      <span className={styles.header__font}>Fonts</span>
+      <span className={styles.header__darkMode} onClick={onHandleDark}>
         <BsFillMoonStarsFill />
       </span>
-      <span onClick={scrollTop} className="header__add">
+      <span onClick={scrollTop} className={styles.header__add}>
         <BsArrowUp />
       </span>
-      <div className="color-btns">
-        <button onClick={roseTheme} className="color-btn _1"></button>
-        <button onClick={orangeTheme} className="color-btn _2"></button>
-        <button onClick={greenTheme} className="color-btn _3"></button>
-        <button onClick={purpleTheme} className="color-btn _4"></button>
+      <div className={styles.colorBtns}>
+        <button
+          onClick={roseTheme}
+          className={`${styles.colorBtn} _1`}
+        ></button>
+        <button
+          onClick={orangeTheme}
+          className={`${styles.colorBtn} _2`}
+        ></button>
+        <button
+          onClick={greenTheme}
+          className={`${styles.colorBtn} _3`}
+        ></button>
+        <button
+          onClick={purpleTheme}
+          className={`${styles.colorBtn} _4`}
+        ></button>
       </div>
     </div>
   );

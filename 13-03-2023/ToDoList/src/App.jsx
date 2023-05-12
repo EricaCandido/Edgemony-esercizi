@@ -1,4 +1,4 @@
-import "./App.css";
+import styles from "./App.module.scss";
 import { useState } from "react";
 import List from "./components/list/List";
 import ListInput from "./components/listInput/ListInput";
@@ -14,7 +14,7 @@ function App({}) {
   const [purple, setPurple] = useState(false);
 
   return (
-    <div className={`App ${background && "dark"}`}>
+    <div className={`${styles.App} ${background && "dark"}`}>
       <Header
         setBackground={setBackground}
         setRose={setRose}

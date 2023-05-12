@@ -1,4 +1,4 @@
-import "./index.css";
+import styles from "./index.module.scss";
 import { useState } from "react";
 
 import { BsFillCircleFill } from "react-icons/bs";
@@ -17,12 +17,11 @@ const ListItem = ({ list, setList, noteText, rose, orange, green, purple }) => {
 
   return (
     <div
-      className={`ListItem ${rose && "_1"} ${orange && "_2"} ${green && "_3"} ${
-        purple && "_4"
-      }`}
+      className={`${styles.ListItem} ${rose && "_1"} ${orange && "_2"} ${
+        green && "_3"
+      } ${purple && "_4"}`}
     >
       <p>
-        {" "}
         {`${
           noteText.todo.length > 60 ? noteText.todo.slice(0, 60) : noteText.todo
         }`}
@@ -33,9 +32,9 @@ const ListItem = ({ list, setList, noteText, rose, orange, green, purple }) => {
 
       <BsFillCircleFill
         onClick={onHandleCheckbox}
-        className={`Checkbox ${visualize && "fill"}`}
+        className={`${styles.Checkbox} ${visualize && "fill"}`}
       />
-      <p className="listItem__date">{`${new Date().getDate()}/${
+      <p className={styles.listItem__date}>{`${new Date().getDate()}/${
         new Date().getMonth() + 1
       }/${new Date().getFullYear()}`}</p>
     </div>

@@ -1,4 +1,4 @@
-import "./index.css";
+import styles from "./index.module.scss";
 import { useState } from "react";
 const ListInput = ({ setList }) => {
   const [noteText, setNoteText] = useState("");
@@ -19,8 +19,8 @@ const ListInput = ({ setList }) => {
 
   return (
     <div>
-      <h2 className="general_title">Notes</h2>
-      <form className="ListInput" onSubmit={onHandleSubmit}>
+      <h2 className={styles.general_title}>Notes</h2>
+      <form className={styles.ListInput} onSubmit={onHandleSubmit}>
         <input
           onChange={(e) => setNoteText(e.target.value)}
           type="text"
@@ -28,7 +28,7 @@ const ListInput = ({ setList }) => {
           value={noteText}
           required
         />
-        <input className="uploadBtn" type="submit" value="Post" />
+        <input className={styles.uploadBtn} type="submit" value="Post" />
       </form>
     </div>
   );

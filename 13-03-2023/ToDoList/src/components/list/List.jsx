@@ -1,8 +1,8 @@
-import "./index.css";
+import styles from "./index.module.scss";
 import ListItem from "../listItem";
 const List = ({ list, setList, rose, orange, green, purple }) => {
   return (
-    <div className="List">
+    <div className={styles.List}>
       {list
         .sort((a, b) => b.id - a.id)
         .map((item) => (
